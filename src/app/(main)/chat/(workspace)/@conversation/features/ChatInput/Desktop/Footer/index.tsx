@@ -15,6 +15,7 @@ import LocalFiles from '../../../../../../../../../features/ChatInput/Desktop/Fi
 import SaveTopic from '../../../../../../../../../features/ChatInput/Topic';
 import SendMore from './SendMore';
 import ShortcutHint from './ShortcutHint';
+import SpeakerEcho from './SpeakerEcho';
 
 const useStyles = createStyles(({ css, prefixCls, token }) => {
   return {
@@ -81,6 +82,7 @@ const Footer = memo<FooterProps>(({ onExpandChange, expand }) => {
       </Flexbox>
       <Flexbox align={'center'} flex={'none'} gap={8} horizontal>
         <ShortcutHint />
+        <SpeakerEcho />
         <SaveTopic />
         <Flexbox style={{ minWidth: 92 }}>
           {isAIGenerating ? (
